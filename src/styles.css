@@ -1,21 +1,93 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* styles.css */
 
-html, body {
+/* Body and General Styling */
+body {
+  font-family: Arial, sans-serif; /* Fallback to sans-serif if Arial is not available */
   margin: 0;
-  border: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Text color */
 }
 
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #2ecc71; /* Emerald green for navigation background */
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff; /* Navigation link color */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Main Content Styles */
 main {
-  margin: auto;
-  width: 50%;
   padding: 20px;
 }
 
-main > h1 {
+/* About Section */
+#about {
+  background-color: #fff;
+  padding: 50px;
   text-align: center;
-  font-size: 3.5em;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 50px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #2ecc71; /* Project title color */
+}
+
+/* Skills Section */
+#skills {
+  background-color: #fff;
+  padding: 50px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark footer background */
+  color: #fff; /* Footer text color */
+}
+
+/* Links */
+a {
+  color: #2ecc71; /* Link color */
+}
+
+a:hover {
+  color: #27ae60; /* Link color on hover */
 }
