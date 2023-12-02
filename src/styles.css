@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #092917; /* Light background color */
-  color: #fff; /* Text color */
+  color: #333; /* Text color */
 }
 container {
   width: 80%; /* Adjust the width as needed */
