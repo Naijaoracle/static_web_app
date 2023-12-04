@@ -69,7 +69,7 @@ main {
   width:200px;
   height:auto;
   margin-right: 20px;
-  shape-outside: circle;
+  shape-outside: rectangle(0,0,200px, 200px);
 }
 
 .about-text{
