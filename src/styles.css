@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #092917;
   color: #333;
-  transition: background-color 0.5s ease;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
 .container {
@@ -22,7 +22,7 @@ nav ul {
   background-color: #2ecc71;
   display: flex;
   text-align: center;
-  transition: background-color 0.5s ease;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
 nav ul li {
@@ -54,7 +54,8 @@ main {
 #about,
 #projects,
 #skills,
-#contact {
+#contact 
+{
   background-color: #ede9da;
   padding: 50px;
   text-align: left;
