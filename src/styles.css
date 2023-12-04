@@ -74,7 +74,7 @@ main {
 /* Project Cards */
 .project-card {
   background-color: #ede9da;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
 }
