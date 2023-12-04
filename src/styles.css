@@ -71,9 +71,6 @@ main {
   margin-right: 10px;
   shape-outside: rectangle(0,0,100px, 100px);
 }
-.about-text{
-  flex: 1;
-}
 
 /* Project Cards */
 .project-card {
