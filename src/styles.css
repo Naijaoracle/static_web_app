@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   background-color: #092917;
   color: #333;
   background-image: linear-gradient(to right, #2ecc71, #092917);
@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav ul li:first-child {
@@ -38,7 +38,7 @@ nav ul li:first-child {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   display: inline-block;
 }
 
@@ -60,7 +60,7 @@ main {
 /* About section */
 {
   background-color: #ede9da;
-  padding: 50px;
+  padding: 20px;
   text-align: left;
 }
 
@@ -76,7 +76,7 @@ main {
 .project-card {
   background-color: #ede9da;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
