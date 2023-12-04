@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   background-color:#ede9da;
   margin: 0 auto;
+  padding: 10ps;
 }
 
 /* Navigation Styles */
