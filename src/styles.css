@@ -1,16 +1,16 @@
-/* styles.css */
-
 /* Body and General Styling */
 body {
-  font-family: Arial, sans-serif; /* Fallback to sans-serif if Arial is not available */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #092917; /* Light background color */
-  color: #333; /* Text color */
+  background-color: #092917;
+  color: #333;
+  transition: background-color 0.5s ease;
 }
-container {
-  width: 80%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the container */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Navigation Styles */
@@ -18,8 +18,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #2ecc71; /* Emerald green for navigation background */
+  background-color: #2ecc71;
+  display: flex;
   text-align: center;
+  transition: background-color 0.5s ease;
 }
 
 nav ul li {
@@ -27,15 +29,19 @@ nav ul li {
   margin-right: 20px;
 }
 
+nav ul li:first-child {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
 nav ul li a {
-  color: #fff; /* Navigation link color */
+  color: #fff;
   text-decoration: none;
   padding: 10px 15px;
   display: inline-block;
 }
 
 nav ul li a:hover {
-  background-color: #27ae60; /* Darker green on hover */
+  background-color: #27ae60;
 }
 
 /* Main Content Styles */
@@ -43,19 +49,17 @@ main {
   padding: 20px;
 }
 
-/* About Section */
-#about {
+/* Sections */
+#about,
+#projects,
+#skills,
+#contact {
   background-color: #fff;
   padding: 50px;
   text-align: center;
 }
 
-/* Projects Section */
-#projects {
-  background-color: #f9f9f9; /* Light gray background */
-  padding: 50px;
-}
-
+/* Project Cards */
 .project-card {
   background-color: #fff;
   border-radius: 5px;
@@ -64,34 +68,23 @@ main {
 }
 
 .project-card h3 {
-  color: #2ecc71; /* Project title color */
-}
-
-/* Skills Section */
-#skills {
-  background-color: #fff;
-  padding: 50px;
-}
-
-/* Contact Section */
-#contact {
-  background-color: #f9f9f9;
-  padding: 50px;
+  color: #2ecc71;
 }
 
 /* Footer Styles */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333; /* Dark footer background */
-  color: #fff; /* Footer text color */
+  background-color: #333;
+  color: #fff;
 }
 
 /* Links */
 a {
-  color: #2ecc71; /* Link color */
+  color: #2ecc71;
 }
 
 a:hover {
-  color: #27ae60; /* Link color on hover */
+  color: #27ae60;
 }
+
