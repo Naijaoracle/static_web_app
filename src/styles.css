@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 80%;
-  background-color:#fff;
+  background-color:#ede9da;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ main {
 #projects,
 #skills,
 #contact {
-  background-color: #fff;
+  background-color: #ede9da;
   padding: 50px;
   text-align: left;
 }
@@ -72,7 +72,7 @@ main {
 
 /* Project Cards */
 .project-card {
-  background-color: #fff;
+  background-color: #ede9da;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
