@@ -57,6 +57,11 @@ main {
 #contact 
 
 /* About section */
+{
+  background-color: #ede9da;
+  padding: 50px;
+  text-align: left;
+}
 
 .about-image{
   float:left;
