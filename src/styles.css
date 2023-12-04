@@ -61,10 +61,7 @@ main {
 }
 
 /* About section */
-.about-content{
-  display: flex;
-  align-items:Left;
-}
+
 .about-image{
   width:200px;
   height:auto;
