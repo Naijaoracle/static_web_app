@@ -59,6 +59,23 @@ main {
   text-align: left;
 }
 
+/* About section */
+.about-content{
+  display: flex;
+  align-items:Left;
+}
+
+.about-image{
+  width:200px;
+  height:auto;
+  margin-right: 20px;
+  shape-outside: circle;
+}
+
+.about-text{
+  flex: 1;
+}
+
 /* Project Cards */
 .project-card {
   background-color: #fff;
