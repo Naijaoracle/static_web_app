@@ -53,6 +53,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #27ae60;
+  opacity:1.0
 }
 
 /* Main Content Styles */
