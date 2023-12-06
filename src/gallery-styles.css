@@ -1,5 +1,135 @@
 /* Gallery Styles */
 
+/* Body and General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #092917;
+  color: #fff;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
+}
+
+/* Container Styles */
+.container {
+  background-color: #ede9da;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  color: #333;
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* 90% width for smaller screens */
+  }
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul li a {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    padding: 10px 15px; /* Reduce padding to accommodate smaller font size */
+    margin-right: 10px; /* Reduce margin to accommodate smaller spacing */
+  }
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:first-child {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #16a085;
+  opacity: 1.0;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+/* Sections */
+#about,
+#projects,
+#skills,
+#contact {
+  background-color: #ede9da;
+  padding: 20px;
+  text-align: left;
+}
+
+/* About section */
+#about {
+  padding-bottom: 30px;
+}
+
+.about-image {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ede9da;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #2ecc71;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Links */
+a {
+  color: #16a085;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #092917;
+  opacity: 1.0;
+}
+
 /* Gallery Container */
 .responsive {
     padding: 0 6px;
