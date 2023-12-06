@@ -104,6 +104,7 @@ footer {
 /* Links */
 a {
   color: #2ecc71;
+  opacity: 0.5;
 }
 
 a:hover {
