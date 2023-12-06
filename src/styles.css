@@ -91,9 +91,10 @@ main {
 
 /* Footer Styles */
 footer {
+  position: fixed;
+  bottom: 0;
   text-align: center;
   padding: 20px;
-  background-color: #333;
   color: #fff;
 }
 
