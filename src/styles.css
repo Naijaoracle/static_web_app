@@ -23,7 +23,7 @@ nav ul {
   margin: 0;
   display: flex;
   text-align: center;
-  background-color: #ede9da;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
 nav ul li {
@@ -51,6 +51,7 @@ nav ul li a:hover {
 /* Main Content Styles */
 main {
   padding: 20px;
+  color: #333;
 }
 
 /* Sections */
