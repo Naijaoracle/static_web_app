@@ -76,7 +76,7 @@ main {
 /* Project Cards */
 .project-card {
   background-color: #ede9da;
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -93,7 +93,8 @@ a {
 }
 
 a:hover {
-  color: #27ae60;
+  color: #fff;
+  background-color: #092917;
   opacity: 0.5;
   transition: color 0.3s ease-in-out;
 }
