@@ -1,51 +1,51 @@
+/* Body and General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 10px;
   background-color: #092917;
-  color: #333;
+  color: #fff;
   background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
+/* Container Styles */
 .container {
-  background-color:#ede9da;
+  background-color: #ede9da;
   margin: 0 auto;
   padding: 20px;
-}
-.container {
   width: 80%;
-  /* Other styles */
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 90%; /* Adjust the width for smaller screens */
-  }
-}
-
-	@@ -32,12 +30,12 @@ nav ul {
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
   display: flex;
   text-align: center;
-  background-image: linear-gradient(to right, #2ecc71, #092917);
+  background-color: #ede9da;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 nav ul li:first-child {
-	@@ -49,41 +47,47 @@ nav ul li a {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+nav ul li a {
+  color: #fff;
   text-decoration: none;
   padding: 20px 20px;
   display: inline-block;
+  transition: background-color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   background-color: #27ae60;
-  opacity: 0.5;
+  opacity: 1.0;
 }
 
 /* Main Content Styles */
@@ -57,30 +57,40 @@ main {
 #about,
 #projects,
 #skills,
-#contact 
-
-/* About section */
-{
+#contact {
   background-color: #ede9da;
   padding: 20px;
   text-align: left;
 }
 
-.about-image{
-  float:left;
-  width:100px;
-  height:auto;
+/* About section */
+#about {
+  padding-bottom: 30px;
+}
+
+.about-image {
+  float: left;
+  width: 100px;
+  height: auto;
   margin-right: 20px;
 }
 
 /* Project Cards */
 .project-card {
   background-color: #ede9da;
-  border: 5px solid #092917;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
-	@@ -99,16 +103,15 @@ footer {
+}
+
+.project-card h3 {
+  color: #2ecc71;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
   padding: 20px;
   background-color: #333;
   color: #fff;
@@ -89,12 +99,12 @@ main {
 /* Links */
 a {
   color: #2ecc71;
-  opacity: 0.5;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
   color: #fff;
   background-color: #092917;
   opacity: 0.5;
-  transition: color 0.3s ease-in-out;
 }
+
