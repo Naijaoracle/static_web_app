@@ -1,71 +1,65 @@
-/* Body and General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   background-color: #092917;
-  color: #fff;
+  color: #333;
   background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
-/* Container Styles */
 .container {
-  background-color: #ede9da;
+  background-color:#ede9da;
   margin: 0 auto;
   padding: 20px;
+}
+.container {
   width: 80%;
+  /* Other styles */
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 90%; /* Adjust the width for smaller screens */
   }
 }
 
-/* Navigation Styles */
-nav ul {
-  list-style: none;
-  padding: 0;
+	@@ -32,12 +30,12 @@ nav ul {
   margin: 0;
   display: flex;
   text-align: center;
-  background-color: #ede9da;
+  background-image: linear-gradient(to right, #2ecc71, #092917);
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav ul li:first-child {
-  margin-right: auto; /* Pushes the logo to the left */
-}
-
-nav ul li a {
-  color: #fff;
+	@@ -49,41 +47,47 @@ nav ul li a {
   text-decoration: none;
   padding: 20px 20px;
   display: inline-block;
-  transition: background-color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   background-color: #27ae60;
-  opacity: 1.0;
+  opacity: 0.5;
 }
 
 /* Main Content Styles */
 main {
   padding: 20px;
-  margin-bottom: 20px;
 }
 
 /* Sections */
 #about,
 #projects,
 #skills,
-#contact
+#contact 
+
+/* About section */
 {
   background-color: #ede9da;
   padding: 20px;
@@ -73,45 +67,31 @@ main {
 }
 
 .about-image{
-  float: left;
-  width: 100px;
-  height: auto;
+  float:left;
+  width:100px;
+  height:auto;
   margin-right: 20px;
-}
-
-/* About section */
-#about {
-  padding-bottom: 30px;
 }
 
 /* Project Cards */
 .project-card {
   background-color: #ede9da;
-  border: 1px solid #ccc;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-.project-card h3 {
-  color: #2ecc71;
-}
-
-/* Footer Styles */
-footer {
-  text-align: center;
+	@@ -99,16 +103,15 @@ footer {
   padding: 20px;
   background-color: #333;
   color: #fff;
-  margin-top: 20px;
 }
 
 /* Links */
 a {
   color: #2ecc71;
-  transition: color 0.3s ease-in-out;
+  opacity: 0.5;
 }
 
 a:hover {
   color: #27ae60;
+  opacity: 0.5;
 }
