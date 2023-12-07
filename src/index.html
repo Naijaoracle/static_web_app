@@ -64,7 +64,7 @@ care.</p>
       <div class="responsive">
         <div class="gallery">
           <a target="_blank" href="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true">
-            <img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true" alt="Cinque Terre" width="600" height="400">
+            <img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true" alt="Cinque Terre" width="300" height="200">
           </a>
           <div class="desc">Quantum cloud computing certification</div>
         </div>
@@ -72,7 +72,27 @@ care.</p>
       <a href = "https://www.daviddasa.com/certifications">see more...</a>
     </section>
     <!-- Skills Section -->
-    
+    const galleryElements = document.querySelectorAll('.gallery');
+
+for (const galleryElement of galleryElements) {
+  const image = galleryElement.querySelector('img');
+  const description = galleryElement.querySelector('.desc');
+
+  image.addEventListener('mouseover', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1.1) translateY(-3px)';
+
+    description.style.opacity = 1;
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1)';
+
+    description.style.opacity = 0;
+  });
+}
+
     <section id="skills">
       <h2>Skills</h2> 
       <ul>
