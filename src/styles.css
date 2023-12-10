@@ -17,7 +17,6 @@ body {
   width: 80%;
   color: #333;
   position: relative;
-  top:80px; /*might need to adjust this*/
   border-radius: 20px;
 }
 
@@ -128,12 +127,6 @@ footer {
   padding: 20px;
   color: #fff;
 }
-
-/* Media query for smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .footer {
-    padding:5px;
-  }
 
 /* Links */
 a {
