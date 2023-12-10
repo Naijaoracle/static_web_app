@@ -69,6 +69,14 @@ nav ul li a:hover {
   opacity: 0.6;
 }
 
+/* Fixed Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; /* Ensuring the navigation bar stays above the content */
+}
+
 /* Main Content Styles */
 main {
   padding: 20px;
