@@ -83,7 +83,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1; /* Ensuring the navigation bar stays above the content */
-  padding-top: 60px; /* Add 60px padding to the top of the navigation bar */
+  margin-bottom: 40px; /* Add 60px padding to the top of the navigation bar */
   
 }
 
