@@ -42,8 +42,8 @@ body {
 
   @media (max-width: 768px) {
     #video iframe {
-      width: 350px;
-      height: 250px;
+      width: 250px;
+      height: 175px;
     }
   }
   
@@ -105,7 +105,7 @@ nav ul li:first-child {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 18px;
+  padding: 12px;
   display: inline-block;
   transition: background-color 0.3s ease-in-out;
 }
