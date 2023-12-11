@@ -63,11 +63,11 @@ body {
     display: block;
     padding: 3px;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   nav .home-link {
-    display: none; /* Hide the 'Home' link */
+    display: none; /* Hide the 'Home' link on mobile devices, the logo should serve.*/
   }
 }
 /* Navigation Styles */
@@ -82,7 +82,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 nav ul li:first-child {
@@ -92,7 +92,7 @@ nav ul li:first-child {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 18px;
   display: inline-block;
   transition: background-color 0.3s ease-in-out;
 }
@@ -172,3 +172,38 @@ a:hover {
   opacity: 1.0;
 }
 
+/*Any other decorations*/
+.responsive_video {
+  border: 1px solid #ccc;
+}
+
+.responsive_video {
+  background-color: #eee;
+}
+
+.responsive_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
