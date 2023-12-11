@@ -42,8 +42,8 @@ body {
 
   @media (max-width: 768px) {
     #video iframe {
-      width: 250px;
-      height: 175px;
+      width: 300px;
+      height: 225px;
     }
   }
   
@@ -77,8 +77,8 @@ body {
   }
 
   .logo{
-    width: 40px;
-    height: 30px;
+    width: 36px;
+    height: 24px;
     display: inline-block;
     margin-right: 0;
   }
