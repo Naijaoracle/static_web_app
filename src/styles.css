@@ -69,6 +69,12 @@ body {
   nav .home-link {
     display: none; /* Hide the 'Home' link on mobile devices, the logo should serve.*/
   }
+
+  .logo{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
 }
 /* Navigation Styles */
 nav ul {
@@ -173,7 +179,7 @@ a:hover {
 }
 
 /*Any other decorations*/
-.responsive_video {
+/* .responsive_video {
   border: 1px solid #ccc;
 }
 
@@ -206,4 +212,4 @@ a:hover {
   background-color: #ccc;
   padding: 10px 15px;
   border-radius: 50%;
-}
+} */
