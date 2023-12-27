@@ -12,7 +12,8 @@
   <!-- Navigation Section -->
   <nav>
     <ul>
-      <li><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/8a9eeb73697d9db0bb7327796f54f42626e5be98/src/DD_logo.png" alt="Logo" width="50" height="50"></a></li>
+      <li class="logo"><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/DD_logo.png?raw=true" alt="Logo" width="50" height="50"></a></li>
+      <li class="home-link"><a href="https://www.daviddasa.com/">Home</a></li>
       <li><a href="https://www.daviddasa.com/about">About</a></li>
       <li><a href="https://www.daviddasa.com/projects">Projects</a></li>
       <li><a href="https://www.daviddasa.com/skills">Skills</a></li>
@@ -23,49 +24,92 @@
 <div class="container">
   <!-- Main Content -->
   <main>
-    <!-- About Section -->
-    <section id="about">
+      <!-- About Section -->
+      <section id="about">    
+      <img src= "https://github.com/Naijaoracle/static_web_app/blob/main/src/david%20dasa.jpeg?raw=true" alt="David Dasa Photo" width="100" height="100" class="about-image">
       <h1>Welcome to My Digital Health & AI Portfolio</h1>
       <p>Hello and welcome! I'm David Dasa, a Medical Doctor on a path to explore the intersection of healthcare and 
 technology. Currently pursuing an MSc in Digital Health & Artificial Intelligence, I seek to leverage technology's potential to 
-enhance healthcare solutions.
+enhance healthcare solutions.</p>
 
-With five years of clinical experience, I've navigated high-pressure medical situations, leading cardiac responses and 
-coordinating postoperative care. My journey is fueled by a vision to integrate innovative technology into healthcare practices, 
-aiming to create impactful solutions for real-world challenges.
+<p>With years of clinical experience, I've navigated high-pressure medical situations, leading cardiac arrest responses and 
+coordinating postoperative care. My journey is fueled by a vision to integrate innovative technology into healthcare practice, 
+aiming to create impactful solutions to real-world challenges.</p>
 
-From conducting research on primary eye care to organizing medical missions, I'm committed to innovation and patient-centric 
-care.
+<p>From conducting research on the use of blockchain technology in healthchare, to organizing medical outreach missions. I am committed to innovation and patient-centric 
+care.</p>
 
-Join me in exploring the dynamic realm where medicine meets technology, as we strive to reshape the future of healthcare.</p>
-      <p>Explore my projects and skills below.</p>
+<p>Join me in exploring the dynamic realm where medicine meets technology, as we strive to shape the future of healthcare.</p>
+      <p>Please take a look around and feel free to <a href="https://www.linkedin.com/in/daviddasa">get in touch</a> on LinkedIn.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Featured Projects</h2>
+      <h2>Featured Project</h2>
       <!-- Descriptions of projects here -->
       <div class="project-card">
-        <h3>Remote patient monitoring system</h3>
-        <p>About
+        <b>Remote patient monitoring system</b>
+        <p>
           A project to build a remote patient monitoring system which uses short range bluetooth low energy medical devices, verifies proximity to a trusted device, and sends the data to medical professionals who verify the data is from a trusted device, saving it to a distributed ledger running a proof of authority consensus protocol.</p>
           <a href="https://github.com/Naijaoracle/remote-patient-monitoring-system"> project github page</a>
         </div>
-      <div class="project-card">
-        <h3>Blood pressure prediction</h3>
-        <p>A project to build a neural network which has a high accuracy in predicting human arterial blood pressure. Watch this space.</p>
-      </div>
       <!-- More project cards as needed -->
     </section>
 
+    <section id="video">
+      <h2>Featured video</h2>
+        <p>Doctor Eric Topol is a cardiologist, scientist, and author. He is the founder and director of the Scripps Research Translational Institute and a professor of Molecular Medicine. He was commissioned by the UK government to lead a team to study the impact emerging technologies would have on healthcare. At the end of their work they wrote <a href = "https://topol.hee.nhs.uk/">the Topol report</a>.</p>
+        <p>Here is Dr Topol giving a TED talk which captures his views on current and ongoing changes in healthcare.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ll5LY7wI_Xc?si=Bq_CBZ8j8J1bUBxq&amp;start=273" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="certification">
+      <h2>Featured certification</h2>
+      <!-- Insert the current featured certification here: -->
+       <!-- Image Gallery Grid -->
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true">
+            <img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true" alt="Cinque Terre" width="300" height="200">
+          </a>
+          <div class="desc"> <b>Quantum cloud computing certification</b></div>
+        </div>
+      </div>
+      <a href = "https://www.daviddasa.com/certifications">see more certifications</a>
+    </section>
     <!-- Skills Section -->
+
+<script>
+  const galleryElements = document.querySelectorAll('.gallery');
+  for (const galleryElement of galleryElements) {
+  const image = galleryElement.querySelector('img');
+  const description = galleryElement.querySelector('.desc');
+
+  image.addEventListener('mouseover', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1.1) translateY(-3px)';
+
+    description.style.opacity = 1;
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1)';
+
+    description.style.opacity = 0;
+  });
+}
+</script>
     <section id="skills">
-      <h2>Skills</h2> <a href = "https://www.daviddasa.com/skills"> more</a>
+      <h2>Skills</h2> 
       <ul>
-        <li>Artificial Intelligence</li>
-        <li>Blockchain</li>
+        <li>Artificial Intelligence model training and testing.</li>
+        <li>Blockchain Development</li>
         <li>Computer Vision</li>
+        <li>eHealth system design and development: UI design, database design and development, prototype development, product testing.</li>
         <li>Programming Languages: Python, JavaScript, Solidity etc.</li>
+        <li>Experience with widely used eHealth systems in frontline clinical practice.</li>
+        <li>Resuscitation & Advanced Life Support.</li>
         <!-- Add more skills as needed -->
       </ul>
     </section>
@@ -82,7 +126,7 @@ I'd love to connect with you. Also if you have any inquiries, feel free to reach
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2023 David Dasa - All rights reserved.</p>
+    <p>&copy; 2023 David Dasa</p>
   </footer>
 
 </body>

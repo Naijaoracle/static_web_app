@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - David Dasa</title>
-  <!-- Link your CSS file here -->
+  <title>About David Dasa</title>
+  <!-- CSS file goes here -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Section -->
+  <!-- Navigation Section (you can include this section or refer to your existing navigation structure) -->
   <nav>
     <ul>
-      <li><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/8a9eeb73697d9db0bb7327796f54f42626e5be98/src/DD_logo.png" alt="Logo" width="50" height="50"></a></li>
+      <li class="logo"><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/DD_logo.png?raw=true" alt="Logo" width="50" height="50"></a></li>
+      <li class="home-link"><a href="https://www.daviddasa.com/">Home</a></li>
       <li><a href="https://www.daviddasa.com/about">About</a></li>
       <li><a href="https://www.daviddasa.com/projects">Projects</a></li>
       <li><a href="https://www.daviddasa.com/skills">Skills</a></li>
@@ -20,29 +21,99 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <div class="container">
-    <h1>About Me</h1>
-
-    <!-- About Section -->
-    <section id="about">
-      <p>Welcome! Here's a glimpse into my educational background and work experience:</p>
-
+      <!-- Introduction -->
+      <section id="introduction">
+        <h1>About me</h1>
+        <p>With a background in medicine and a deep-rooted interest in leveraging technology to solve patient problems, I'm passionate about solving real-world challenges using digital innovation and AI-driven solutions.</p>
+      </section>
+      
+      <div class="project-card">
       <!-- Education Section -->
-      <div class="card">
+      <section id="education">
         <h2>Education</h2>
-        <p>Click below to explore my educational journey.</p>
-        <a href="education.html">Learn More</a>
+        <h3>Bournemouth University, Bournemouth, England.</h3>
+        <p>MSc Digital Health & Artificial Intelligence (In Progress)</p>
+        <b>Expected graduation date: September 2024</b>
+        <p>Relevant modules:</p>
+        <ul>
+          <li>Computer Vision</li>
+          <li>Accessibility and Assistive Technologies</li>
+          <li>Artificial Intelligence</li>
+          <li>Foundations of Health informations systems</li>
+          <li>Blockchain and Digital Futures</li>
+        </ul>
+        <!-- Other education details -->
+        <h3>Usmanu Danfodiyo University Sokoto, Sokoto, Nigeria.</h3>
+        <p>MBBS (Doctor of Human Medicine)</p>
+        <b>March 2012 - March 2018</b>
+        <p>Select Modules:</p>
+        <ul>
+          <li>Pathology</li>
+          <li>Radiology</li>
+          <li>Bio-statistics</li>
+          <li>Paediatrics</li>
+          <li>Principles of Medical Ethics</li>
+        </ul>
+        <!-- Other education details -->
+        <h4>Achievements</h4>
+        <ul>
+          <li>Awarded several academic scholarships</li>
+          <li>Completed numerous voluntary work placements in hospitals and clinics</li>
+        </ul>
+      </section>
+      </div>
+    <!-- Work Section -->
+    <div class="project-card">
+    <h2>Work Experience</h2>
+    
+      <section id="Work Experience">
+        <h3>RMO International Healthcare LLP, Bromsgrove, England</h3>
+        <p>In this role I served as the Resident Medical Officer in various hospitals and wards accross England. I provided patient care in line with consultant instructions and clinical best practice. I also provided resuscitation cover for emergencies.</p>
+        <p>Some centres where I worked:</p>
+        <ul>
+          <li>Furness General Hospital - Surgical Departments</li>
+          <li>Nightingale Hospital London - General Adult Psychiatry</li>
+          <li>Stoke Mandeville Hospital - General Surgery</li>
+          <li>Braintree Community Hospital - Trauma and Orthopaedics</li>
+        </ul>
+
+        <h3>Kebbi State Ministry of Health, Birnin Kebbi, Nigeria</h3>
+        <p>In this role I served as a Medical Officer directly in patient care in facilities run by the ministry. I provided patient care in line with clinical best practice.</p>
+
+        <h3>National Youth Service Corp, Kaduna, Nigeria</h3>
+        <p>This was for my year of national service, which is a year long requirement for Nigerian graduates. I served in rural and urban medical facilities.</p>
+
+        <h3>Federal Medical Centre Katsina, Katsina, Nigeria</h3>
+        <p>This was a year long internship, which is required for all new medical graduates before independent clinical practice. It involved a rotation round several departments for broad clinical experience.</p>        
+        
+        <!-- Other work details -->
+      </section>
       </div>
 
-      <!-- Work Experience Section -->
-      <div class="card">
-        <h2>Work Experience</h2>
-        <p>Discover my professional experiences.</p>
-        <a href="work-experience.html">Explore</a>
+      <div class="project-card">
+      <h2>Volunteering Experience</h2>
+        <section id="Volunteering Experience">
+        <h3>Rural Medical/Surgical Outreach, 2016.</h3>
+        <p>In 2016, while serving as the Mission Secretary of my schools chapter of the Christian Medical and Dental Association Nigeria - Students, I played a leading role in organising a medical outreach to a rural community in another state.</p>
+        <p>The participants included surgeons, nurses, community physicians, medical students, and others. About 610 patients received free medical consultations and about 50 patients received free surgeries.</p>
+        <p>Prior to this I had participated in outreaches, but this one also gave me an opportunity to take a leadership role. Ultimately it was a great opportunity to make a real difference in the lives of those who needed it but were unable to find solutions. </p>
+      </section>
       </div>
-    </section>
+      
+    <section id="Mission Statement">
+        <h3>Mission Statement</h3>
+        <p>As I continue my journey into the realm of Digital Health & AI, I'm committed to harnessing my medical expertise, technological skills, and unwavering passion to drive meaningful advancements in healthcare.</p>
+        <p>Join me in this pursuit towards a future where innovative technologies redefine healthcare delivery.</p>
+      </section>
+      <!-- Other sections as needed: Research, Languages, etc. -->
   </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 David Dasa</p>
+  </footer>
 
 </body>
 </html>
-

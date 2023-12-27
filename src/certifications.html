@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certifications - David Dasa</title>
-  <!-- Link your CSS file here -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Unique CSS style sheet for this one -->
+  <link rel="stylesheet" href="gallery-styles.css">
 </head>
 <body>
 
   <!-- Navigation Section -->
   <nav>
     <ul>
-      <li><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/8a9eeb73697d9db0bb7327796f54f42626e5be98/src/DD_logo.png" alt="Logo" width="50" height="50"></a></li>
+      <li class="logo"><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/DD_logo.png?raw=true" alt="Logo" width="50" height="50"></a></li>
+      <li class="home-link"><a href="https://www.daviddasa.com/">Home</a></li>
       <li><a href="https://www.daviddasa.com/about">About</a></li>
       <li><a href="https://www.daviddasa.com/projects">Projects</a></li>
       <li><a href="https://www.daviddasa.com/skills">Skills</a></li>
@@ -20,23 +21,59 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <h1>Certifications</h1>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <div class="certification-card">
-        <h2>Certification Title</h2>
-        <p>Description: Description of the certification.</p>
-        <a href="path/to/certification.pdf">Download PDF</a> <!-- Replace with the actual path to PDF certification -->
-        <!-- If using images, use an <img> tag instead of a link -->
-        <!-- <img src="path/to/certification-image.jpg" alt="Certification Image"> -->
-      </div>
+ <!-- Certification Section -->
+ <h2>Certifications Gallery</h2>
 
-      <!-- Add more certification cards as needed -->
-    </section>
+ <!-- Image Gallery Grid -->
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/kaggle%20Data%20Visualization.png?raw=true">
+      <img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/kaggle%20Data%20Visualization.png?raw=true" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Kaggle data visualisation certification </div>
   </div>
+</div>
 
+ <!-- Image Gallery Grid -->
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true">
+      <img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/img/Quantum%20cloud%20computing%20certification.jpeg?raw=true" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Quantum cloud computing certification</div>
+  </div>
+</div>
+<script>
+  const galleryElements = document.querySelectorAll('.gallery');
+  for (const galleryElement of galleryElements) {
+  const image = galleryElement.querySelector('img');
+  const description = galleryElement.querySelector('.desc');
+
+  image.addEventListener('mouseover', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1.1) translateY(-3px)';
+
+    description.style.opacity = 1;
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transition = 'transform 0.3s ease-in-out';
+    image.style.transform = 'scale(1)';
+
+    description.style.opacity = 0;
+  });
+}
+</script>
+ <!-- Just add more image gallery elements here: -->
+
+ <div class="clearfix"></div>
+
+ <div style="padding: 6px;"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 David Dasa</p>
+  </footer>
 </body>
 </html>
-

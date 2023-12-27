@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About David Dasa</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li class="logo"><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/DD_logo.png?raw=true" alt="Logo" width="50" height="50"></a></li>
+      <li class="home-link"><a href="https://www.daviddasa.com/">Home</a></li>
+      <li><a href="https://www.daviddasa.com/about">About</a></li>
+      <li><a href="https://www.daviddasa.com/projects">Projects</a></li>
+      <li><a href="https://www.daviddasa.com/skills">Skills</a></li>
+      <li><a href="https://www.daviddasa.com/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Introduction -->
+    <section id="introduction">
+      <h1>Tuberculosis Prediction</h1>
+      <p>Chest x-rays are a very common imaging modality. It may be the only imaging tool available in underdeveloped areas, this means the ability to pick up tuberculosis from a chest x-ray is something that may be beneficial to patients. Eventually we may expand this model to identify other conditions from chest x-rays.</p>
+      <p>In this code sample we train a simple convolutional neural network to classify x-rays into positive or negative for TB.</p>
+      <h2>Key steps</h2>
+      <h3>Data Preparation:</h3>
+      <p>The project begins by loading chest X-ray images from a specified directory and creating a list of filenames labeled as TB positive or negative based on a naming convention (MCUCXR_XXXX_1.png).</p>
+      <h3>Dataset creation:</h3>
+      <p>Utilizing a custom dataset class (CustomImageDataset), the project transforms the raw image data into a format suitable for model training by applying resizing and tensor conversion.</p>
+      <h3>Model Development:</h3>
+      <p>A simple CNN architecture (SimpleCNN) is defined and instantiated for training. This CNN comprises convolutional layers, pooling layers, and fully connected layers, designed to learn features from the input images and classify them into TB positive or negative categories.</p>
+      <h3>Training and Evaluation:</h3>
+      <p>The model is trained using the prepared dataset split into training and testing sets. The training loop optimizes the model's parameters using the Adam optimizer and cross-entropy loss function.</p>
+      <p>Following training, the model's performance is evaluated on the test set, computing its accuracy in correctly predicting TB presence in the X-ray images.</p>
+    </section>
+
+    <!-- Notebook Embed -->
+    <iframe
+      src="https://naijaoracle.github.io/jupyterwork/notebooks/index.html?path=tuberculosis.ipynb&kernel=python&toolbar=1&theme=JupyterLab%20Dark"
+      width="100%"
+      height="800px" <!-- Adjust the height as needed -->
+    ></iframe>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+      <h1>Conclusion</h1>
+      <p>The project aims to achieve an accurate and reliable classification model for TB detection in chest X-ray images.</p>
+      <p>The notebook above showcases the use of a pytorch based convolutional neural network to classify chest x-rays based on the presence or abscence of tuberculosis. The model had an accuracy of 81.48% on the testing data.</p>
+      <p>In the next phase, we will explore the use of pretrained models and assess their performance at this task.</p>
+      <p>I would like to hear your thoughts. You can <a href="https://www.linkedin.com/in/daviddasa">get in touch</a> via LinkedIn.</p>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 David Dasa</p>
+  </footer>
+
+</body>
+</html>
