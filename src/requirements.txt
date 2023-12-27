@@ -1,5 +1,0 @@
-azure-functions
-Pillow
-torch
-torchvision
-azure-storage-blob
