@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About David Dasa</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li class="logo"><a href="https://www.daviddasa.com"><img src="https://github.com/Naijaoracle/static_web_app/blob/main/src/DD_logo.png?raw=true" alt="Logo" width="50" height="50"></a></li>
+      <li class="home-link"><a href="https://www.daviddasa.com/">Home</a></li>
+      <li><a href="https://www.daviddasa.com/about">About</a></li>
+      <li><a href="https://www.daviddasa.com/projects">Projects</a></li>
+      <li><a href="https://www.daviddasa.com/skills">Skills</a></li>
+      <li><a href="https://www.daviddasa.com/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Introduction -->
+    <section id="introduction">
+      <h1>Tuberculosis Prediction</h1>
+      <p>Chest x-rays are a very common imaging tool in healthcare. This means the ability to pick up tuberculosis from a chest x-ray is something that may be beneficial to patients. Eventually we may expand this model to identify other conditions from chest x-rays.</p>
+      <p>In a previous test <a href="https://www.daviddasa.com/tuberculosis-chestxray"> here</a> we used a convolutional neural network to classify x-rays into positive or negative for TB. It was based on the python library pytorch.</p>
+      <p>This model is an attempt to improve the first model built on the deep learning library keras <a href="https://www.daviddasa.com/kerastb">here</a>.</p>
+    </section>
+
+    <!-- Notebook Embed -->
+    <iframe
+      src="https://naijaoracle.github.io/jupyterwork/notebooks/index.html?path=kerastb01.ipynb&kernel=python&toolbar=1&theme=JupyterLab%20Dark"
+      width="100%"
+      height="800px" <!-- Adjust the height as needed -->
+    ></iframe>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+      <h1>Conclusion</h1>
+      <p>The project aims to achieve an accurate and reliable classification model for TB detection in chest X-ray images.</p>
+      <p>The notebook above shows the use of a keras based convolutional neural network to classify chest x-rays based on the presence or abscence of tuberculosis. We can view it in comparison to the pythorch based model <a href="https://www.daviddasa.com/tuberculosis-chestxray"> here</a>. This model is an improvement on the first keras model <a href="https://www.daviddasa.com/kerastb"> here</a>. There is still a lot left to do to bump those numbers up.</p>
+      <p>In the next phase, we will explore the use of pretrained models and assess their performance at this task.</p>
+      <p>I would like to hear your thoughts. You can <a href="https://www.linkedin.com/in/daviddasa">get in touch</a> via LinkedIn.</p>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 David Dasa</p>
+  </footer>
+
+</body>
+</html>
