@@ -1,5 +1,5 @@
-azure-functions
-Pillow
-torch
-torchvision
-azure-storage-blob
+azure-functions==1.4.0
+Pillow==9.0.0
+torch==1.10.0
+torchvision==0.11.1
+azure-storage-blob==12.9.0
