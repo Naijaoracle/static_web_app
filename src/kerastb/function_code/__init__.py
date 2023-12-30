@@ -3,19 +3,29 @@ import azure.functions as func
 from azure.storage.blob import BlobClient
 from model_architecture import load_model_weights_from_blob
 import os
+import io
+import requests
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    connection_string = os.environ["AzureWebJobsStorage"]  # Retrieve connection string from application settings
+    blob_function_url = "https://daviddasa.azurewebsites.net/api/httptrigger1"
 
-    blob_url = "https://csb10032002a3ba9f46.blob.core.windows.net/staticwebapp/kerastb01_model_weights.h5"
-    # You can alternatively construct blob_url dynamically using container_name and blob_name
+    try:
+        # Check if the request contains a file
+        if 'imageFile' in req.files:
+            image_file = req.files['imageFile'][0]
 
-    # Call the function to load model weights
-    loaded_model = load_model_weights_from_blob(blob_url, connection_string)
+            # Upload the image to the blob function
+            response = requests.post(blob_function_url, files={'image': (image_file.filename, io.BytesIO(image_file.read()))})
 
-    if loaded_model is not None:
-        return func.HttpResponse(f"Model loaded successfully from Blob Storage: {blob_url}")
-    else:
-        return func.HttpResponse("Failed to load model from Blob Storage. Check logs for details.", status_code=500)
+            if response.status_code == 200:
+                return func.HttpResponse(response.text)
+            else:
+                return func.HttpResponse("Failed to process the image.", status_code=500)
+        else:
+            return func.HttpResponse("No image file found in the request.", status_code=400)
+
+    except Exception as e:
+        logging.error(f"Error during image processing: {str(e)}")
+        return func.HttpResponse("An error occurred during image processing.", status_code=500)

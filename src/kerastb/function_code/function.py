@@ -5,8 +5,27 @@ from PIL import Image
 import azure.functions as func
 
 def load_model_weights_from_blob(container_name, blob_name):
-    connection_string = os.environ["AzureWebJobsStorage"]
-    # Add your code to load model weights from Azure Blob Storage
+    try:
+        # Retrieve the Azure Blob Storage connection string from environment variables
+        connection_string = os.getenv("AzureWebJobsStorage")
+
+        # Create a BlobServiceClient using the connection string
+        blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+
+        # Get the blob client for the specific container and blob
+        blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+
+        # Download the blob (model weights)
+        model_weights = blob_client.download_blob().readall()
+
+        # Perform further actions like loading the model using the weights
+        # Example: model.load_weights(model_weights)
+        # Return the loaded model or weights for further processing
+        return model_weights  # or loaded model object
+
+    except Exception as e:
+        logging.error(f"An error occurred while loading model weights: {str(e)}")
+        return None
 
 def load_and_preprocess_image(uploaded_image, target_size=(224, 224)):
     try:
